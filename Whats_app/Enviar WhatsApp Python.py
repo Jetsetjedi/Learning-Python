@@ -36,8 +36,8 @@ import urllib
 navegador = webdriver.Chrome()
 navegador.get("https://web.whatsapp.com/")
 
-while len(navegador.find_elements_by_id("side")) < 1:
-    time.sleep(1)
+#while len(navegador.find_elements_by_id("side")) < 1:
+ #   time.sleep(1)
 
 # já estamos com o login feito no whatsapp web
 for i, mensagem in enumerate(contatos_df['Mensagem']):
@@ -49,9 +49,9 @@ for i, mensagem in enumerate(contatos_df['Mensagem']):
     while len(navegador.find_elements_by_id("side")) < 1:
         time.sleep(1)
     navegador.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]').send_keys(Keys.ENTER)
-    time.sleep(10)
-        
-    
+    time.sleep(50)
+
+
 
 
 # In[ ]:
