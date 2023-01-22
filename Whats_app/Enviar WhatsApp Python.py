@@ -22,7 +22,7 @@
 import pandas as pd
 
 contatos_df = pd.read_excel("Enviar.xlsx")
-display(contatos_df)
+print(contatos_df)
 
 
 # In[20]:
