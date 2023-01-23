@@ -10,7 +10,7 @@
 import requests
 import json
 
-link = "https://jssecret-42b50-default-rtdb.firebaseio.com/"
+link = "URL do seu banco..... Firebase/"
 
 # Criar uma venda (POST)
 dados = {'cliente': 'alon', 'preco': 150, 'produto': 'teclado'}
